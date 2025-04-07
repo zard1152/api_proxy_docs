@@ -30,23 +30,23 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
     
-    plugins: [
-      [
-        '@easyops-cn/docusaurus-search-local',
-        {
-          // 可选: 默认 "en"
-          hashed: true,
-          // 搜索的文档类型
-          docsRouteBasePath: '/',
-          // 可选: 默认 ["title", "content"]
-          searchResultLimits: 8,
-          // 可选: 高亮搜索结果
-          highlightSearchResults: true,
-          // 可选: 加载语言分词器
-          language: ["en", "zh"],
-        }
-      ],
-    ],
+plugins: [
+  [
+    '@easyops-cn/docusaurus-search-local',
+    {
+      // 可选: 默认 "en"
+      hashed: true,
+      // 搜索的文档类型
+      docsRouteBasePath: '/',
+      // 可选: 默认 ["title", "content"]
+      searchResultLimits: 8,
+      // 可选: 高亮搜索结果
+      highlightSearchResults: true,
+      // 可选: 加载语言分词器
+      language: ["en", "zh"],
+    }
+  ],
+],
   },
 
   presets: [
