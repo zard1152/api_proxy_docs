@@ -5,6 +5,23 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        // 可选: 默认 "en"
+        hashed: true,
+        // 搜索的文档类型
+        docsRouteBasePath: '/',
+        // 可选: 默认 ["title", "content"]
+        searchResultLimits: 8,
+        // 可选: 高亮搜索结果
+        highlightSearchResults: true,
+        // 可选: 加载语言分词器
+        language: ["en", "zh"],
+      }
+    ],
+  ],
   title: 'GPT API Proxy',
   tagline: 'A simple proxy for OpenAI API, DeepSeek API, and more, there unit more API at one place',
   favicon: 'img/favicon.ico',
@@ -30,23 +47,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
     
-plugins: [
-  [
-    '@easyops-cn/docusaurus-search-local',
-    {
-      // 可选: 默认 "en"
-      hashed: true,
-      // 搜索的文档类型
-      docsRouteBasePath: '/',
-      // 可选: 默认 ["title", "content"]
-      searchResultLimits: 8,
-      // 可选: 高亮搜索结果
-      highlightSearchResults: true,
-      // 可选: 加载语言分词器
-      language: ["en", "zh"],
-    }
-  ],
-],
+
   },
 
   presets: [
