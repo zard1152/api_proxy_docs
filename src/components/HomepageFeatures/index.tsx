@@ -1,7 +1,23 @@
 import type {ReactNode} from 'react';
+import React, {useEffect} from 'react';
+import {useHistory} from '@docusaurus/router';
+
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+
+
+export default function Home() {
+  const history = useHistory();
+  
+  useEffect(() => {
+    // 重定向到你想要的文档页面
+    history.replace('/docs/intro');
+  }, [history]);
+  
+  // 返回空内容，因为页面会立即重定向
+  return null;
+}
 
 type FeatureItem = {
   title: string;
