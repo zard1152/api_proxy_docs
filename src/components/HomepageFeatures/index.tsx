@@ -1,6 +1,6 @@
 // import type {ReactNode} from 'react';
 import React, {useEffect} from 'react';
-// import {useHistory} from '@docusaurus/router';
+import {useHistory} from '@docusaurus/router';
 
 // import clsx from 'clsx';
 // import Heading from '@theme/Heading';
