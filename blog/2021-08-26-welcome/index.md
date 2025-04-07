@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-authors: 
-tags: []
+tags:
+  - first
 ---
 init work 
