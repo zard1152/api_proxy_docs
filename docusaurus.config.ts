@@ -16,7 +16,7 @@ const config: Config = {
         // 可选: 默认 ["title", "content"]
         searchResultLimits: 8,
         // 可选: 高亮搜索结果
-        highlightSearchResults: true,
+        highlightSearchTerms: true,
         // 可选: 加载语言分词器
         language: ["en", "zh"],
       }
