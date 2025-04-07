@@ -43,25 +43,27 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans','pt-BR'],
+    locales: ['en', 'zh-Hans', 'pt-BR'],
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
         label: 'English',
-        direction: '/docs/website/i18n/en',
+        // Changed from a file path to 'ltr' (left-to-right)
+        direction: 'ltr',
       },
       'zh-Hans': {
         htmlLang: 'zh-Hans',
         label: '简体中文',
+        direction: 'ltr', // Adding the required direction property
       },      
       'pt-BR': {
-        htmlLang: 'portuguese(brazil)',
-        label: 'portuguese(brazil)',
+        htmlLang: 'pt-BR',
+        label: 'Português (Brasil)',
+        direction: 'ltr', // Adding the required direction property
       },
     },
-
   },
-
+  
   presets: [
     [
       'classic',
