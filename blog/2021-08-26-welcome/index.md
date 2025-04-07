@@ -1,7 +1,5 @@
 ---
 slug: welcome
 title: Welcome
-tags:
-  - first
 ---
-init work 
+init work
