@@ -48,6 +48,7 @@ const config: Config = {
       en: {
         htmlLang: 'en-US',
         label: 'English',
+        direction: '/docs/website/i18n/en',
       },
       'zh-Hans': {
         htmlLang: 'zh-Hans',
@@ -55,7 +56,7 @@ const config: Config = {
       },      
       'pt-BR': {
         htmlLang: 'portuguese(brazil)',
-        label: 'português',
+        label: 'portuguese(brazil)',
       },
     },
 
