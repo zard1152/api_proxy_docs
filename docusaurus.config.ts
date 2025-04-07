@@ -43,8 +43,21 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
-    
+    locales: ['en', 'zh-Hans','pt-BR'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-US',
+        label: 'English',
+      },
+      'zh-Hans': {
+        htmlLang: 'zh-Hans',
+        label: '简体中文',
+      },      
+      'pt-BR': {
+        htmlLang: 'portuguese(brazil)',
+        label: 'português',
+      },
+    },
 
   },
 
@@ -86,7 +99,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/logo.svg',
     navbar: {
-      title: 'My Site',
+      title: 'GPT API Proxy',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -99,6 +112,10 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
