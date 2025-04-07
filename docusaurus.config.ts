@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://docs.llmproai.xyz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -29,6 +29,24 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    
+    plugins: [
+      [
+        '@easyops-cn/docusaurus-search-local',
+        {
+          // 可选: 默认 "en"
+          hashed: true,
+          // 搜索的文档类型
+          docsRouteBasePath: '/',
+          // 可选: 默认 ["title", "content"]
+          searchResultLimits: 8,
+          // 可选: 高亮搜索结果
+          highlightSearchResults: true,
+          // 可选: 加载语言分词器
+          language: ["en", "zh"],
+        }
+      ],
+    ],
   },
 
   presets: [

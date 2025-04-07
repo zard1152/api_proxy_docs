@@ -12,7 +12,7 @@ export default function Home() {
   
   useEffect(() => {
     // 重定向到你想要的文档页面
-    history.replace('/docs/intro');
+    history.replace('/intro');
   }, [history]);
   
   // 返回空内容，因为页面会立即重定向
