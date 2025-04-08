@@ -16,7 +16,7 @@ const config: Config = {
         // 可选: 默认 ["title", "content"]
         searchResultLimits: 8,
         // 可选: 加载语言分词器
-        language: ["en", "zh"],
+        language: ["zh"],
       }
     ],
   ],
