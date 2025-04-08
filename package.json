@@ -15,7 +15,9 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "tina-dev": "tinacms dev -c \"npm run start\"",
+    "tina-build": "tinacms build && npm run build"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
