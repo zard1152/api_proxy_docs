@@ -47,7 +47,7 @@ const config: Config = {
     localeConfigs: {
       en: {
         htmlLang: 'en-US',
-        label: 'English',
+        label: 'English',   
 
       },
       'zh-Hans': {
@@ -132,7 +132,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/intro',
             },
           ],
         },
